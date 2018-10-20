@@ -57,6 +57,14 @@ ashake,
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
+#events{
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    z-index: 999;
+    display: block;
+    font-size: 12px;
+}
 .text-overlay h1
 {
   @font-face { font-family: Audiowide; src: url('Audiowide-Regular.ttf'); }
@@ -97,3 +105,4 @@ a:hover{
 }
 .text-overlay b1 
     color: black;
+}
