@@ -71,8 +71,7 @@ ashake,
 }
 .text-overlay h1
 {
-  @font-face { font-family: Audiowide; src: url('Audiowide-Regular.ttf'); }
-  @font-face { font-family: Audiowide; font-weight: bold; src: url('Audiowide-Regular.ttf');}
+  @font-face { font-family: FasterOne; src: url('FasterOne-Regular.ttf'); }
   font-size: large;
   white-space: nowrap;
   color: white;
