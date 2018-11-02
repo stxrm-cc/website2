@@ -72,7 +72,7 @@ ashake,
 .text-overlay h1
 {
   @font-face { font-family: FasterOne; src: url('FasterOne-Regular.ttf'); }
-  font-size: 60px;
+  font-size: 36px;
   white-space: nowrap;
   color: white;
   text-align: center;
