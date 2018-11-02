@@ -79,12 +79,13 @@ ashake,
 }
 .text-overlay p
 {
+  font-family: 'Longhaul', cursive;
   font-size: 2rem;
   white-space: nowrap;
   color: white;
 }
 .text-overlay p {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Longhaul', sans-serif;
 	color: white;
 	text-shadow: 0px 0px 3px black;
 	letter-spacing: 2px;
@@ -98,7 +99,7 @@ ashake,
     text-shadow: 0px 0px 3px grey;
     text-decoration: none;
     letter-spacing: 1px;
-    font-family: 'Comfortaa' cursive;
+    font-family: 'Longhaul', cursive;
     -webkit-transition: 1s;
 }
 a:hover{
