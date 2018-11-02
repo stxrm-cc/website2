@@ -71,11 +71,11 @@ ashake,
 }
 .text-overlay h1
 {
-  @font-face { font-family: FasterOne; src: url('FasterOne-Regular.ttf'); }
-  font-size: 4.2rem;
-  white-space: nowrap;
-  color: white;
-  text-align: center;
+    font-family: 'Faster One', cursive;
+    font-size: 4.2rem;
+    white-space: nowrap;
+    color: white;
+    text-align: center;
 }
 .text-overlay p
 {
