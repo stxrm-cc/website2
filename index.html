@@ -8,15 +8,16 @@
             @font-face { font-family: Longhaul; font-weight: bold; src: url('Longhaul.ttf');}
         </style>
         <link rel="icon" href="images/icon.png">
-            <script language=javascript>
-                msg = " | ";
-                msg = " stxrmhook " + msg;position = 0;
-                function scrolltitle() {
-                    document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
-                    if (position > msg.length) position = 0
-                    window.setTimeout("scrolltitle()", 200);
-                }
-            scrolltitle();                </script>
+        <script language=javascript>
+            msg = " | ";
+            msg = " stxrmhook " + msg;position = 0;
+            function scrolltitle() {
+                document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
+                if (position > msg.length) position = 0
+                window.setTimeout("scrolltitle()", 200);
+            }
+        scrolltitle();                
+                </script>
         <meta name="author" content="stxrm" />
         <meta charset="utf-8">
             <title>stxrmhook</title>
