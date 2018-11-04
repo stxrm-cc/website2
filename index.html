@@ -7,11 +7,19 @@
             @font-face { font-family: Longhaul; src: url('Longhaul.ttf'); }
             @font-face { font-family: Longhaul; font-weight: bold; src: url('Longhaul.ttf');}
         </style>
-        <link rel="icon" href="images/icon.png">
-        <meta name="description" content="s̷t̷x̷r̷m̷h̷o̷o̷k̷" 
+        <link rel="icon" src="images/image.png">
+            <script language=javascript>
+                msg = " | ";
+                msg = " stxrmhook " + msg;position = 0;
+                function scrolltitle() {
+                    document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
+                    if (position > msg.length) position = 0
+                    window.setTimeout("scrolltitle()", 200);
+                }
+            scrolltitle();                </script>
         <meta name="author" content="stxrm" />
         <meta charset="utf-8">
-            <title>$txrmhook</title>
+            <title>stxrmhook</title>
             <meta name="author" content="stxrm" />
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
