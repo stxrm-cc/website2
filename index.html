@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html oncontextmenu="return false">
     <head>
+    <script src="main.js"></script>
         <style>
             @font-face { font-family: FasterOne; src: url('FasterOne-Regular.ttf'); }
             @font-face { font-family: FasterOne; font-weight: bold; src: url('FasterOne-Regular.ttf');}
             @font-face { font-family: Longhaul; src: url('Longhaul.ttf'); }
             @font-face { font-family: Longhaul; font-weight: bold; src: url('Longhaul.ttf');}
         </style>
-        <link rel="icon" href="images/icon.png">
-        <script language=javascript>
-            msg = " † ";
-            msg = " stxrmhook " + msg;position = 0;
-            function scrolltitle() {
-                document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
-                if (position > msg.length) position = 0
-                window.setTimeout("scrolltitle()", 200);
-            }
-        scrolltitle();                
-                </script>
+        <link rel="icon" src="images/image.png">
+            <script language=javascript>
+                msg = " | ";
+                msg = " stxrmhook " + msg;position = 0;
+                function scrolltitle() {
+                    document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
+                    if (position > msg.length) position = 0
+                    window.setTimeout("scrolltitle()", 200);
+                }
+            scrolltitle();                </script>
         <meta name="author" content="stxrm" />
         <meta charset="utf-8">
             <title>stxrmhook</title>
@@ -26,12 +26,18 @@
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
                 </head>
                 <body>
-                    <video autoplay muted loop id="myVideo">
-                        <iframe src="gosha.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+                    <video playsinline="" autoplay="" loop="" id="bgVideo">
+                        <source src="video/gosha.mp4" type="video/mp4">
+                            <script>
+                                
+                                var video = document.currentScript.parentElement;
+                                video.volume = 0.666;
+                                
+                                </script>
                             </video>
                     <div class="text-overlay">
                         <h1>stxrmhook</h1>
-                            <audio src="gosha.mp3" loop autoplay></audio>
+                            <iframe src="gosha.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
                                 <p><b>A macOS cheat for Counter Strike:Global Offensive</b></p>
                             
                             <div class="media">
@@ -41,5 +47,6 @@
                                 <a href="https://github.com/stxrmhook/adjkdialofnaiodj/raw/master/stxrmhook.zip"><i class="fas fa-download" class="shake"></i></a>
                                 <a href="https://twitter.com/_Atlantics"><i class="fab fa-twitter" class="shake"></i></a>
                             </ul>
+                            </div>
                             </div>
                             </body>

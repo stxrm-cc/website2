@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Faster+One');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Chakra+Petch')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body {
   margin: 0;
   padding: 0;
@@ -40,19 +41,28 @@ ashake,
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
-#myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+#bgVideo {
+    position:fixed;
+    min-width:135%;
+    min-height:110%;
+    width:auto;
+    height:auto;
+    z-index:-100;
+    transform:translateX(-50%) translateY(-50%);
+    background-size:cover;
+    overflow:hidden;
     -webkit-filter:blur(15px);
     -moz-filter:blur(15px);
     -o-filter:blur(15px);
     -ms-filter:blur(15px);
     filter:blur(15px);
     background:rgba(7,9,21,.5);
-    filter:brightness(50%);
+    filter:brightness(62.5%);
+}
+
+#body,video{
+    top:50%;
+    left:50%
 }
 .text-overlay
 {
@@ -61,13 +71,14 @@ ashake,
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #events{
     position: absolute;
     left: 5px;
     top: 8px;
     z-index: 999;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
 }
 .text-overlay h1
 {
@@ -112,7 +123,7 @@ ashake,
 }
 
 a:hover{
-    color:#9900cc;
+    color:#FF0084;
     opacity:0.8;
 	text-shadow: 1px 1px 2px black;
 	-webkit-transition: .5s;
@@ -122,3 +133,16 @@ a:hover{
     color: black;
 }
 
+.log-title {
+    color: #FF0084;
+}
+
+.log-body {
+    color: rgb(220,220,220);
+}
+
+.event {
+    position: relative;
+    opacity: 0;
+    top: -100px;
+}
