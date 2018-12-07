@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Faster+One');
+@import url('https://fonts.googleapis.com/css?family=VT323');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Chakra+Petch')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -80,9 +80,8 @@ ashake,
     display: block;
     font-size: 14px;
 }
-.text-overlay h1
-{
-    font-family: 'Faster One', cursive;
+.text-overlay h1{
+    font-family: 'VT323', monospace;
     font-size: 4.2rem;
     white-space: nowrap;
     color: white;
