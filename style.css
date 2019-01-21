@@ -145,3 +145,8 @@ a:hover{
     opacity: 0;
     top: -100px;
 }
+
+.vhs-bg {
+  background-image: url("face.gif");
+  background-size: cover;
+}
