@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Chakra+Petch')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+font-family: "True Lies";
+src: url("truelies.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -81,7 +86,7 @@ ashake,
     font-size: 14px;
 }
 .text-overlay h1{
-    font-family: 'Faster One', cursive;
+    font-family: 'True Lies', cursive;
     font-size: 4.2rem;
     white-space: nowrap;
     color: white;
