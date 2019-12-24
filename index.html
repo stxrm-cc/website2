@@ -11,9 +11,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
     <link rel="stylesheet" href="lcl-assets/css/style.css" type="text/css" />
 
+<script>
+    function setHalfVolume() {
+        var myAudio = document.getElementById("audio");
+        myAudio.volume = 0.2;
+    }
+</script>    
+    
 <script language=javascript>
     msg = " ✞ ";
-    msg = " stxrm " + msg;position = 0;
+    msg = " sauce " + msg;position = 0;
     function scrolltitle() {
         document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
         if (position > msg.length) position = 0
@@ -25,15 +32,15 @@ scrolltitle();                </script>
   <body id="vhs">
   <span style="position: fixed; top: 7.5%; left: 5%;">PLAY ></span>
     <div id="center">
-      <h1>stxrm</h1>
+      <h1>sauce</h1>
       <a href="https://ghoul.xyz/shop.html" target="_blank">shop</a> :: <a href="https://twitter.com/uwupervert" target="_blank">twitter</a> :: <a href="https://github.com/stxrm-cc" target="_blank">github</a> 
-    <iframe src="suicide.mp3" allow="autoplay" loop="true" id="audio" style="display:none"></iframe>
+    <audio id="audio" style="display:none;" src="sauce.mp3" controls autoplay loop onloadeddata="setHalfVolume()">
   </div>
 
   <span id="clock" style="position: fixed; bottom: 10%; left: 5%;"></span>
   <span id="date" style="position: fixed; bottom: 5%; left: 5%;"></span>
 </body>
-
+    
 <script>
 function clock() {
     //Save the times in variables
