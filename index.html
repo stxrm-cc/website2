@@ -1,91 +1,73 @@
-<!DOCTYPE html>
-<html oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
-<html lang="en" dir="ltr">
+
+ 
   <head>
-    <meta charset="utf-8">
-<link rel = "icon" type = "image/png" href = "../images/icon.png">
-    <!-- For apple devices -->
-    <link rel = "apple-touch-icon" type = "image/ico" href = "/icon.ico"/>
+    <title> Sauce | Navigation </title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/ico" href="j.ico">
+    <noscript></noscript>
+ </head>
+ <body onload="teclear();">
+    <p>To display this page you need a browser that supports JavaScript.</p>
     
-    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
-    <link rel="stylesheet" href="lcl-assets/css/style.css" type="text/css" />
-
-<script>
-    function setHalfVolume() {
-        var myAudio = document.getElementById("audio");
-        myAudio.volume = 0.2;
-    }
-</script>    
-    
-<script language=javascript>
-    msg = " ✞ ";
-    msg = " sauce " + msg;position = 0;
-    function scrolltitle() {
-        document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
-        if (position > msg.length) position = 0
-        window.setTimeout("scrolltitle()", 200);
-    }
-scrolltitle();                </script>
-  </head>
-
-  <body id="vhs">
-  <span style="position: fixed; top: 7.5%; left: 5%;">PLAY ></span>
+    <style>pre{font-family:"Courier New",Courier,monospace}</style>
+    <meta http-equiv="imagetoolbar" content="no">
+    <style type="text/css">
+       <!-- input,textarea{-webkit-touch-callout:default;-webkit-user-select:auto;-khtml-user-select:auto;-moz-user-select:text;-ms-user-select:text;user-select:text} *{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;user-select:none} -->
+    </style>
+    <style type="text/css" media="print">
+       <!-- body{display:none} -->
+    </style>
+    <noscript>
+       <p>To display this page you need a browser that supports JavaScript.</p>
+    </noscript>
+    <!--[if gte IE 5]>
+    <frame>
+    </frame><[endif]-->
     <div id="center">
-      <h1>sauce</h1>
-      <a href="https://ghoul.xyz/shop.html" target="_blank">shop</a> :: <a href="https://twitter.com/uwupervert" target="_blank">twitter</a> :: <a href="https://github.com/stxrm-cc" target="_blank">github</a> 
-    <audio id="audio" style="display:none;" src="sauce.mp3" controls autoplay loop onloadeddata="setHalfVolume()">
-  </div>
+       <iframe src="music.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+       <center>
+          <div style="position:absolute;margin-top:90px;top:0;right:0;bottom:0;left:0;" id="art">
+             <pre> 
+   _____        _    _  _____ ______ 
+  / ____|  /\  | |  | |/ ____|  ____|
+ | (___   /  \ | |  | | |    | |__   
+  \___ \ / /\ \| |  | | |    |  __|  
+  ____) / ____ \ |__| | |____| |____ 
+ |_____/_/    \_\____/ \_____|______|
+                                                                                                         
+	     </pre>
+          </div>
+       </center>
+       <script language="javascript">
+          mensaje=
+          '<br><br><center><ul class="nav"><li><a href="http://sauceproxy.dx.am/index.php">web proxy</a> : </li><li><a href="contact.html">contact</a></ul><br>'+
+          '<p><font color="#FFFFFF">+</font><b class="blu">=======================================================</b><font color="#FFFFFF">+</font><br><br>'+
+          '<a href="https://github.com/stxrm-cc" target="_blank" style="text-decoration:none; color:#ADFF2F;">Github</a><br><br>'+
+          '<a href="https://steamcommunity.com/id/b1gsauce/" target="_blank" style="text-decoration:none; color:#FF0094;">Steam</a><br><br>'+
+          '<a href="https://twitter.com/sw4gl0rds4uc3" target="_blank" style="text-decoration:none; color:#7b00ff;">Twitter</a><br><br>'+
+          '<a href="https://www.youtube.com/channel/UCVdvONJWGlkg2w_j1sHmeCQ?view_as=subscriber" target="_blank" style="text-decoration:none; color:#f44242;">YouTube</a><br><br>'+
+          '<font color="#FFFFFF">+</font><b class="blu">=======================================================</b><font color="#FFFFFF">+</font><br><br></p>'
+          line=0
+          cursor='_'
+          function teclear(){if(line==mensaje.length)cursor=''
+          ttecleado.innerHTML=mensaje.substring(0,line)+cursor
+          if(line++<mensaje.length)setTimeout("teclear()",1)}
+       </script> 
+       <div style="position:absolute;margin-top:200px;top:0;right:0;bottom:0;left:0;" id="ttecleado">
+          <br><br>
+          <center>
+             <ul class="nav">
+                <li><a href="http://sauceproxy.dx.am/index.php">web proxy</a> : </li>
+                <li><a href="contact.html">contact</a></li>
+             </ul>
+             <br>
+             <p><font color="#FFFFFF">+</font><b class="blu">=======================================================</b><font color="#FFFFFF">+</font><br><br><a href="https://github.com/stxrm-cc" target="_blank" style="text-decoration:none; color:#ADFF2F;">Github</a><br><br><a href="https://steamcommunity.com/id/b1gsauce/" target="_blank" style="text-decoration:none; color:#FF0094;">Steam</a><br><br><a href="https://twitter.com/sw4gl0rds4uc3" target="_blank" style="text-decoration:none; color:#7b00ff;">Twitter</a><br><br><a href="https://www.youtube.com/channel/UCVdvONJWGlkg2w_j1sHmeCQ?view_as=subscriber" target="_blank" style="text-decoration:none; color:#f44242;">YouTube</a><br><br><font color="#FFFFFF">+</font><b class="blu">=======================================================</b><font color="#FFFFFF">+</font><br><br></p>
+          </center>
+       </div>
+    </div>
+    <noscript>
+       <p>To display this page you need a browser that supports JavaScript.</p>
+    </noscript>
+ </body>
 
-  <span id="clock" style="position: fixed; bottom: 10%; left: 5%;"></span>
-  <span id="date" style="position: fixed; bottom: 5%; left: 5%;"></span>
-</body>
-    
-<script>
-function clock() {
-    //Save the times in variables
-    var today = new Date();
-    var hours = today.getHours();
-    var minutes = today.getMinutes();
-    var seconds = today.getSeconds();
-    var month = today.getMonth();
-    var day = today.getDate();
-    var year = today.getFullYear();
-    var monthNames = ["JAN.", "FEB.", "MAR.", "APR.", "MAY.", "JUN.", "JUL.", "AUG.", "SEP.", "OCT.", "NOV.", "DEC."];
-    //Set the AM or PM time
-    if (hours >= 12) {
-        meridiem = "PM";
-    }
-    else {
-        meridiem = "AM";
-    }
-    //convert hours to 12 hour format and put 0 in front
-    if (hours > 12) {
-        hours = hours - 12;
-    }
-    else if (hours === 0) {
-        hours = 12;
-    }
-    //Put 0 in front of single digit minutes and seconds
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
-    else {
-        minutes = minutes;
-    }
-    if (seconds < 10) {
-        seconds = "0" + seconds;
-    }
-    else {
-        seconds = seconds;
-    }
-    document.getElementById("clock").innerHTML = (meridiem  + " " + hours + ":" + minutes);
-    document.getElementById("date").innerHTML = (monthNames[month] + " " + day + " " + year);
-}
-setInterval('clock()', 0);
-</script>
-<script>
-    console.log('Website created by insane.#7003 in discord.')
-    </script>
-</html>
-                <!-- Copyright © 2019 stxrm LLC. All rights reserved. -->
