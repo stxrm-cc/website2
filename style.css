@@ -1,7 +1,16 @@
 body
 {
-  background-image: url("ground10.gif");
-  font-family: 'Courier New', arial;
+  font-family: 'Courier New', arial; 
+}
+
+html { 
+  background: url(ground10.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='ground10.gif', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='ground10.gif', sizingMethod='scale')";
 }
 
 div#center
