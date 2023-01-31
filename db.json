@@ -1,5 +1,5 @@
 {
-   "usernames":"sauce",
-   "passwords":"test123",
+   "usernames":["sauce", "turbofunnel"],
+   "passwords":["test123"],
    "keys":"182N1kdiamdioa0931Kozlkpdwai_213oL"
 }
